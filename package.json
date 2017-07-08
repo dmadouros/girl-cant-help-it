@@ -1,5 +1,7 @@
 {
   "name": "girl-cant-help-it",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "react": "^15.6.1"
+  }
 }
