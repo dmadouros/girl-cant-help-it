@@ -1,0 +1,113 @@
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+
+$navbar-border-radius: 0;
+$grid-float-breakpoint: 1284px;
+$navbar-inverse-brand-hover-color: #ff0000;
+
+@import "bootstrap";
+
+body {
+  padding-top: 51px;
+}
+
+/*
+ * Bootstrap overrides
+ */
+
+// make navbar content centered on large screens
+@media (min-width: $grid-float-breakpoint) {
+  .navbar-container {
+    margin: 0 auto;
+    width: $grid-float-breakpoint + 15px;
+
+  .navbar-header, .navbar-collapse {
+    float: none;
+    display: inline-block !important;
+  }
+}
+}
+
+/*
+ * End bootstrap overrides
+ */
+
+h1 {
+  color: darken(red, 6.5%);
+}
+
+.navbar-brand.brand {
+  color: darken(red, 6.5%);
+}
+
+.social-media {
+  padding-top: 15px;
+}
+
+.img-social-media {
+  width: 40px;
+  height: 40px;
+}
+
+.panels-sidebar {
+  margin-top: 5px;
+}
+
+.footer {
+  margin-bottom: 20px;
+}
+
+.band-member {
+  float: left;
+  margin-right: 10px;
+}
+
+.superscript {
+  vertical-align: super;
+  font-size: x-small;
+}
+
+.song {
+  margin-bottom: 1em;
+}
+
+.song-title {
+  font-weight: bold;
+}
+
+.song-writers {
+  font-style: italic;
+}
+
+.footnote {
+  font-size: smaller;
+  font-style: italic;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.disclaimer {
+  font-size: 0.7em;
+
+}
+
+.photos {
+img {
+  border: 1px solid #ddd;
+  padding: 4px;
+  margin: 4px;
+  border-radius: 4px;
+}
+}
+
+.panel ol.additional-bands {
+  margin: 0;
+  padding: 0;
+
+& > li {
+      list-style-type: none;
+      font-size: smaller;
+    }
+}
